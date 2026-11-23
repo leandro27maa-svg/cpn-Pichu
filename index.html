@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C.N.P - Compañía Nacional Pichu | Soluciones Electromecánicas</title>
+
+  <!-- Google Fonts: Inter & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR (Escolar) -->
+  <div class="school-banner">
+    <div class="container school-banner-content">
+      <span><i class="fa-solid fa-graduation-cap"></i> Proyecto Escolar: <strong>Tecnologías de Gestión</strong> - Perfil Técnico Electromecánico</span>
+      <button id="openSchoolModalBtn" class="btn-school-badge">Ver Informe Técnico</button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="logo.png" alt="Logo C.N.P" class="logo-img" />
+        <div class="brand-text">
+          <span class="brand-title">C.N.P</span>
+          <span class="brand-sub">Compañía Nacional Pichu</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">La Empresa</a>
+        <a href="#equipo" class="nav-link">Equipo</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#contacto" class="nav-link btn-nav-cta">Contacto</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-tag"><i class="fa-solid fa-gears"></i> Mantenimiento • Reparación • Instalación</div>
+        <h1 class="hero-title">Ingeniería & Soluciones <span>Electromecánicas</span> de Alta Confiabilidad</h1>
+        <p class="hero-description">
+          En <strong>Compañía Nacional Pichu (C.N.P)</strong> brindamos asistencia técnica integral para hogares, comercios e industrias. Garantizamos continuidad operativa, seguridad y máxima eficiencia energética en tus equipos.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Solicitar Presupuesto</a>
+          <a href="#servicios" class="btn btn-secondary"><i class="fa-solid fa-wrench"></i> Explorar Servicios</a>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Trabajo Seguro</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Asistencia Técnica</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Sectores (Hogar/Comercio/Industria)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-graphic">
+        <div class="logo-card shadow-glow">
+          <img src="logo.png" alt="C.N.P Logo Principal" class="hero-logo-img" />
+          <div class="card-caption">
+            <h3>Engranaje & Llave</h3>
+            <p>Mecánica industrial y precisión en herramientas de reparación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS SECTION -->
+  <section class="services-section" id="servicios">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Nuestras Especialidades</span>
+        <h2 class="section-title">Servicios Técnicos Electromecánicos</h2>
+        <div class="title-bar"></div>
+        <p class="section-intro">
+          Ofrecemos respuestas concretas a los desafíos de mantenimiento preventivo, diagnóstico eléctrico y montaje mecánico.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Mantenimiento Electromecánico</h3>
+          <p>Planes preventivos y correctivos para motores, bombas, ventiladores industriales y compresores. Evitamos paradas no programadas.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Lubricación y balanceo</li>
+            <li><i class="fa-solid fa-check"></i> Medición de aislamiento</li>
+            <li><i class="fa-solid fa-check"></i> Inspección térmica de bobinados</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card highlighted-card">
+          <div class="popular-badge">Más Solicitado</div>
+          <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Instalación & Tableros</h3>
+          <p>Montaje seguro de tableros eléctricos de potencia y comando, sistemas de protección, conexionados industriales y automatismos.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Tableros de control de motores</li>
+            <li><i class="fa-solid fa-check"></i> Instalaciones domiciliarias e industriales</li>
+            <li><i class="fa-solid fa-check"></i> Sistemas de protección diferencial y térmicos</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3>Diagnóstico y Reparación</h3>
+          <p>Detección rápida y certera de fallas electromecánicas complejas con herramientas de medición avanzadas e instrumental calibrado.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Reparación de mecanismos internos</li>
+            <li><i class="fa-solid fa-check"></i> Sustitución de rodamientos y sellos</li>
+            <li><i class="fa-solid fa-check"></i> Pruebas funcionales de carga</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Seguridad & Asesoría Técnica</h3>
+          <p>Auditorías e inspecciones bajo normas de higiene y seguridad laboral para certificar la operación confiable de tus máquinas.</p>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-check"></i> Análisis de riesgos de equipos</li>
+            <li><i class="fa-solid fa-check"></i> Optimización de consumo energético</li>
+            <li><i class="fa-solid fa-check"></i> Protocolos de operación segura</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS / IDENTIDAD ORGANIZACIONAL -->
+  <section class="about-section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col">
+          <span class="section-subtitle">Identidad & Orientación</span>
+          <h2 class="section-title">Compañía Nacional Pichu (C.N.P)</h2>
+          <div class="title-bar"></div>
+          
+          <p>
+            Somos una organización técnica especializada en el campo de la <strong>electromecánica</strong>. Nacemos con el propósito de resolver los requerimientos de montaje, operación y reparación de maquinaria industrial y equipos hogareños o comerciales.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div>
+                <h4>Nuestra Misión</h4>
+                <p>Garantizar el correcto funcionamiento de equipos electromecánicos actuando con responsabilidad, seguridad y máxima eficacia técnica.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fa-solid fa-eye"></i></div>
+              <div>
+                <h4>Identidad del Logo</h4>
+                <p><strong>Engranaje:</strong> representa el movimiento y la mecánica industrial. <strong>Llave:</strong> simboliza las herramientas de reparación y servicio técnico constante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info-col">
+          <div class="recursos-card">
+            <h3><i class="fa-solid fa-boxes-stacked"></i> Recursos de la Organización</h3>
+            <div class="resource-item">
+              <i class="fa-solid fa-user-gear"></i>
+              <div>
+                <strong>Recursos Humanos:</strong>
+                <span>Técnicos electromecánicos capacitados en normas de seguridad y mantenimiento.</span>
+              </div>
+            </div>
+            <div class="resource-item">
+              <i class="fa-solid fa-microchip"></i>
+              <div>
+                <strong>Recursos Tecnológicos:</strong>
+                <span>Instrumental analógico y digital, multímetros, pinzas amperométricas y herramientas específicas.</span>
+              </div>
+            </div>
+            <div class="resource-item">
+              <i class="fa-solid fa-circle-info"></i>
+              <div>
+                <strong>Recursos de Información:</strong>
+                <span>Manuales de fabricante, diagramas de conexionado y protocolos de gestión de calidad.</span>
+              </div>
+            </div>
+            <div class="resource-item">
+              <i class="fa-solid fa-coins"></i>
+              <div>
+                <strong>Recursos Económicos:</strong>
+                <span>Presupuesto asignado a insumos, repuestos homologados e inversión en equipamiento.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO TRABAJO -->
+  <section class="team-section" id="equipo">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Talento Humano</span>
+        <h2 class="section-title">Nuestro Equipo Técnico</h2>
+        <div class="title-bar"></div>
+        <p class="section-intro">
+          Personal calificado orientado al cumplimiento estricto de las normas electromecánicas y la gestión de calidad.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h3>Área Mantenimiento</h3>
+          <span class="team-role">Técnicos de Campo</span>
+          <p>Encargados de las intervenciones preventivas y correctivas directamente en sitio.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-user-gear"></i></div>
+          <h3>Área Instalaciones</h3>
+          <span class="team-role">Especialistas Electromecánicos</span>
+          <p>Responsables del tendido de canalizaciones, conexionado de tableros y puesta en marcha.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-user-shield"></i></div>
+          <h3>Área Seguridad & Calidad</h3>
+          <span class="team-role">Supervisores de Gestión</span>
+          <p>Verifican la utilización de elementos de protección personal (EPP) y la seguridad del entorno.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Área Administrativa</h3>
+          <span class="team-role">Gestión de Insumos & Clientes</span>
+          <p>Administra presupuestos, logística de repuestos y atención continua al cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials-section" id="testimonios">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Confiabilidad Comprobada</span>
+        <h2 class="section-title">Opiniones de Nuestros Clientes</h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Excelente servicio en el mantenimiento de nuestros motores trifásicos. C.N.P actuó con rapidez y nos ahorró horas de parada en la línea de producción."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Fábrica Textil San Martín</h4>
+              <span>Sector Industrial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Instalaron el tablero principal de nuestro local comercial. Todo prolijo, en norma y con un trato muy profesional. Muy recomendables."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Gastronomía El Sol</h4>
+              <span>Sector Comercial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Resolvieron un problema de cortocircuito en el compresor central que ningún otro servicio técnico lograba diagnosticar correctamente."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Taller Metalúrgico Nordelta</h4>
+              <span>Sector Mecánico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="section-subtitle">Hablemos de tus necesidades</span>
+          <h2>Solicitá tu Diagnóstico o Presupuesto</h2>
+          <p>Completá el formulario y nuestro equipo técnico se pondrá en contacto a la brevedad para coordinar la visita o evaluación técnica.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-headset"></i>
+              <div>
+                <strong>Atención Directa:</strong>
+                <p>Respuesta inmediata a través de nuestro formulario web.</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Horario de Operaciones:</strong>
+                <p>Lunes a Viernes de 08:00 a 18:00 hs.</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Garantía de Servicio:</strong>
+                <p>Todos nuestros trabajos cuentan con supervisión electromecánica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contactForm" novalidate>
+            <h3>Formulario de Consulta</h3>
+            
+            <div class="form-group">
+              <label for="name">Nombre y Apellido *</label>
+              <input type="text" id="name" name="name" required placeholder="Ej: Juan Pérez" />
+              <span class="error-msg" id="nameError">Por favor ingresá tu nombre.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" />
+              <span class="error-msg" id="emailError">Ingresá un correo electrónico válido.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="sector">Tipo de Sector</label>
+              <select id="sector" name="sector">
+                <option value="Hogar">Hogar / Domiciliario</option>
+                <option value="Comercio">Comercio / Pyme</option>
+                <option value="Industria" selected>Industria / Fábrica</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Servicio Requerido *</label>
+              <select id="service" name="service" required>
+                <option value="Mantenimiento">Mantenimiento Electromecánico</option>
+                <option value="Instalación">Instalación / Tableros</option>
+                <option value="Reparación">Reparación de Averías</option>
+                <option value="Asesoría">Inspección & Asesoría</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje o Detalle del Trabajo *</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Describí brevemente el equipo o falla a revisar..."></textarea>
+              <span class="error-msg" id="messageError">Ingresá los detalles del mensaje.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <span>Enviar Consulta</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <div class="form-success-alert hidden" id="successAlert">
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>¡Consulta Enviada con Éxito!</h4>
+            <p>Gracias por contactar a <strong>Compañía Nacional Pichu (C.N.P)</strong>. Tu mensaje ha sido registrado correctamente.</p>
+            <button class="btn btn-secondary btn-sm" id="resetFormBtn">Enviar otra consulta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <img src="logo.png" alt="C.N.P Logo" class="footer-logo-img" />
+          <span class="brand-title">C.N.P</span>
+        </div>
+        <p>Compañía Nacional Pichu • Mantenimiento, Reparación e Instalación Electromecánica.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">La Empresa</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-school">
+        <h4>Datos del Trabajo Escolar</h4>
+        <p><strong>Materia:</strong> Tecnologías de Gestión</p>
+        <p><strong>Orientación:</strong> Electromecánica</p>
+        <p><strong>Proyecto:</strong> Creación de Organización y Landing Page Web</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Compañía Nacional Pichu (C.N.P) - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL: INFORME TÉCNICO COMPLETO (Consignas del proyecto) -->
+  <div class="modal-overlay hidden" id="schoolModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-file-lines"></i> Informe Técnico Escolar - Tecnologías de Gestión</h3>
+        <button class="modal-close" id="closeSchoolModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-intro">
+          A continuación se presentan las 16 consignas desarrolladas para la materia <strong>Tecnologías de Gestión</strong> por la organización <strong>Compañía Nacional Pichu (C.N.P)</strong>:
+        </p>
+
+        <div class="consigna-item">
+          <h4>1. Tipo de orientación como perfil técnico</h4>
+          <p>Nuestro perfil técnico está orientado al área de <strong>electromecánica</strong>. Se busca realizar tareas de mantenimiento, reparación e instalación de equipos electromecánicos, operando herramientas de forma segura y resolviendo problemas en sitio.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>2. Nombre y definición del servicio</h4>
+          <p><strong>Compañía Nacional Pichu (C.N.P)</strong> ofrece servicios integrales de mantenimiento, reparación e instalación electromecánica para hogares, comercios e industrias, garantizando continuidad operativa y seguridad.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>3. Logo o marca institucional</h4>
+          <p>Consiste en un <strong>Engranaje</strong> (área mecánica industrial) y una <strong>Llave</strong> (herramientas de mantenimiento y reparación), simbolizando la solución técnica integral.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>4. Resumen de la gestión de trabajo</h4>
+          <p>Organización enfocada en optimizar el tiempo de respuesta, aplicar normas de higiene y seguridad laboral, y brindar máxima confiabilidad en la atención de equipos electromecánicos.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>5. Objetivos de la propuesta</h4>
+          <p>Poner en práctica las competencias electromecánicas, ofreciendo diagnósticos certeros y soluciones preventivas en motores, tableros y máquinas industriales.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>6. Análisis organizacional</h4>
+          <p>Estructura operativa dividida en: Área de Mantenimiento, Área de Instalaciones, Área de Seguridad/Calidad y Área Administrativa.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>7. Misión de la organización</h4>
+          <p>Compromiso constante con la calidad de servicio, la protección del personal técnico y la satisfacción del cliente.</p>
+        </div>
+
+        <div class="consigna-item">
+          <h4>8. Recursos a utilizar</h4>
+          <p>Recursos Humanos (técnicos calificados), Tecnológicos (instrumental y herramientas), de Información (manuales y diagramas) y Económicos (presupuestos y logística).</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="modalCloseAction">Cerrar Ventana</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUDIO ELEMENT (Background Music) -->
+  <audio id="bgMusic" src="musica.mp3" loop preload="auto"></audio>
+
+  <!-- FLOATING MUSIC CONTROL WIDGET -->
+  <div class="music-widget" id="musicWidget" title="Activar/Desactivar Música de Fondo">
+    <button class="music-toggle-btn" id="musicToggleBtn" aria-label="Reproducir/Pausar Música">
+      <i class="fa-solid fa-music" id="musicIcon"></i>
+    </button>
+    <div class="music-tooltip" id="musicTooltip">Activar Música</div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
